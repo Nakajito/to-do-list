@@ -1,0 +1,25 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <title>{{ title }}</title>
+</head>
+<body>
+    
+    <!-- Menú de navegación -->
+    {% include 'includes/nav.html' %}
+    
+    <!-- Contenido del header -->
+    {% include 'includes/header.html' %}
+    
+    <!-- Contenido del footer -->
+    {% include 'includes/footer.html' %}
+    
+    <!-- Script para utilizar Tailwind CSS -->
+    <script src="{% static 'js/tailwindcss4.js' %}"></script>
+</body>
+</html>

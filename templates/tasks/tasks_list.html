@@ -1,0 +1,22 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{{ title }}</title>
+</head>
+<body>
+    <h1 class="text-center text-3xl m-5">{{ header }}</h1>
+    
+    <div class="    ">
+        <ul>
+            {% for task in task_list %}
+            <li class="bg-blue-400">{{ task }}</li>
+            {% endfor %}
+        </ul>
+        
+    </div>
+    <script src="{% static 'js/tailwindcss4.js' %}"></script>
+</body>
+</html>
